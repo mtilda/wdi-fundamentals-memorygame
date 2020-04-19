@@ -48,10 +48,44 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #FFFFFF;
     margin: 0px 20px;
+    border-bottom: 2px solid transparent;
+}
+a:hover {
+	border-color: white;
 }
 p {
 	border
 }
 img {
 	margin: 40px 8px 0 8px;
+}
+footer {
+	padding: 0 20px 0 20px;
+	background-color: #0D2C40;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+	clear: both;
+	text-transform: uppercase;
+}
+.copyright {
+	float: left;
+	font-family: Raleway;
+}
+.message {
+	float: right;
+	font-family: Raleway;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+.name {
+	color: #F15B31;
+	font-weight: 700;
 }
