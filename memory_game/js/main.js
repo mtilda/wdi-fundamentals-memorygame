@@ -53,4 +53,20 @@ function flipCard() {
 	}
 }
 
+// reset board
+function resetBoard() {
+	// empty cardsInPlay array
+	cardsInPlay.length = 0;
+	// remove each child of game-board
+	let boardElement = document.querySelector('#game-board');
+	while (boardElement.firstChild) {
+		boardElement.removeChild(boardElement.lastChild);
+	}
+	// create new board
+	createBoard();
+}
+
+// add event listener to the reset button that resets the board
+document.getElementById('reset').addEventListener("click", resetBoard);
+
 createBoard();
